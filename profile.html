@@ -542,18 +542,25 @@
         /* Certifications */
         .certifications-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-columns: 1fr;
             gap: 1.5rem;
-            max-width: 800px;
+            max-width: 600px;
             margin: 0 auto;
         }
         
         .certification-card {
             background: var(--bg-primary);
-            padding: 1.5rem;
+            padding: 1rem 1.5rem;
             border-radius: 0.5rem;
             border: 1px solid var(--border-color);
             text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .certification-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-md);
+            border-color: var(--neutral-charcoal);
         }
         
         .certification-name {
@@ -577,7 +584,7 @@
         
         /* Contact */
         .contact-info {
-            max-width: 500px;
+            max-width: 650px;
             margin: 0 auto;
             text-align: center;
         }
@@ -729,29 +736,6 @@
             </div>
         </section>
 
-        <section id="highlights" class="section">
-            <div class="container">
-                <div class="highlights-grid">
-                    <div class="highlight-card fade-in">
-                        <div class="highlight-title">Founder & CEO</div>
-                        <div class="highlight-subtitle">Rapture Twelve</div>
-                    </div>
-                    <div class="highlight-card fade-in">
-                        <div class="highlight-title">Cybersecurity Intern</div>
-                        <div class="highlight-subtitle">Briskinfosec (May–Jul 2025)</div>
-                    </div>
-                    <div class="highlight-card fade-in">
-                        <div class="highlight-title">Hackathon Winner</div>
-                        <div class="highlight-subtitle">National Inter-NIT AI Security</div>
-                    </div>
-                    <div class="highlight-card fade-in">
-                        <div class="highlight-title">OSCP Certified</div>
-                        <div class="highlight-subtitle">Offensive Security (In Progress)</div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
         <section id="experience" class="section">
             <div class="container">
                 <div class="section-header fade-in">
@@ -764,14 +748,14 @@
                                 <h3 class="card-title">Founder & CEO</h3>
                                 <div class="card-subtitle">Rapture Twelve (Cybersecurity Company)</div>
                             </div>
-                            <div class="card-period">2024 - Present</div>
+                            <div class="card-period">2025 - Present</div>
                         </div>
                         <div class="card-description">
-                            <p>Leading the development of AI-powered security products and providing expert consulting services.</p>
+                            <p>Founder and CEO of a cybersecurity firm specializing in offensive and defensive operations, dedicated to detecting, analyzing, and neutralizing advanced cyber threats while providing end-to-end technical consulting and designing tailored security strategies for enterprises and critical infrastructure.</p>
                             <ul>
-                                <li>Direct red teaming operations and SOC automation projects for diverse clients.</li>
-                                <li>Define the product roadmap for autonomous security tooling and enterprise solutions.</li>
-                                <li>Manage client engagements from proposal to delivery, ensuring high satisfaction.</li>
+                                <li>Lead advanced red teaming campaigns, full-scope penetration testing, and malware engineering operations.</li>
+                                <li>Develop autonomous tools and frameworks for vulnerability discovery, exploit development, malware analysis, and offensive security operations, including automated attack simulations, threat intelligence gathering, and continuous security assessment.</li>
+                                <li>Oversee business strategy, client engagement, and operational workflows while scaling high-impact consulting services across multiple industries.</li>
                             </ul>
                         </div>
                     </div>
@@ -834,7 +818,7 @@
             <div class="container">
                 <div class="section-header fade-in">
                     <h2 class="section-title">Projects</h2>
-                    <p class="section-subtitle">A selection of my work in cybersecurity and development.</p>
+                    <p class="section-subtitle">A selection of my best work in cybersecurity and development.</p>
                 </div>
                 <div class="projects-grid">
                     <div class="project-card fade-in">
@@ -992,23 +976,22 @@
         <section id="certifications" class="section">
             <div class="container">
                 <div class="section-header fade-in">
-                    <h2 class="section-title">Certifications</h2>
+                    <h2 class="section-title">Certifications and Achievements</h2>
                 </div>
                 <div class="certifications-grid fade-in">
+                    <div class="certification-card">
+                        <div class="certification-name">National Inter-NIT Cybersecurity Hackathon</div>
+                        <div class="certification-org">Maulana Azad National Institute of Technology</div>
+                        <div class="certification-status">Winner</div>
+                    </div>
                     <div class="certification-card">
                         <div class="certification-name">OSCP</div>
                         <div class="certification-org">Offensive Security</div>
                         <div class="certification-status">In Progress</div>
                     </div>
                     <div class="certification-card">
-                        <div class="certification-name">CPTS</div>
-                        <div class="certification-org">HackTheBox Academy</div>
-                        <div class="certification-status">In Progress</div>
-                    </div>
-                    <div class="certification-card">
                         <div class="certification-name">Google Cybersecurity Professional</div>
                         <div class="certification-org">Google</div>
-                        <div class="certification-status">2025</div>
                     </div>
                     <div class="certification-card">
                         <div class="certification-name">Network Security and Cryptography</div>
@@ -1025,10 +1008,13 @@
                 </div>
                 <div class="fade-in" style="max-width: 800px; margin: 0 auto; text-align: center;">
                     <p style="font-size: 1.15rem; line-height: 1.8; color: var(--text-secondary);">
-                        I am a dedicated cybersecurity researcher and AI/ML engineer, currently pursuing a B.Tech at the National Institute of Technology, Rourkela. My passion lies at the intersection of offensive security and artificial intelligence, where I focus on developing intelligent systems to automate threat detection and response.
+                        I started out writing exploits and hacking into stuff just for fun, just trying to see how far I could push systems and what I could make them do. At some point, I realized those same skills could actually be used to help people by making tech safer.
                     </p>
                     <p style="font-size: 1.15rem; line-height: 1.8; color: var(--text-secondary); margin-top: 1.5rem;">
-                        As the founder of Rapture Twelve, I lead initiatives in AI-driven security solutions. I thrive on the challenges of penetration testing, malware analysis, and building full-stack applications. When not hunting for vulnerabilities or training neural networks, I enjoy contributing to open-source security projects and sharing knowledge with the community.
+                        Right now, I'm doing my B.Tech at NIT Rourkela and running Rapture Twelve, where I work on red teaming, malware analysis, and building security tools powered by AI/ML. What started off as late-night experiments slowly turned into creating frameworks that can automate threat detection, simulate attacks, and strengthen defenses.
+                    </p>
+                    <p style="font-size: 1.15rem; line-height: 1.8; color: var(--text-secondary); margin-top: 1.5rem;">
+                        I still get the same kick out of breaking and building things, but these days I try to put that energy into solving real problems. I use AI and ML to make security smarter and more scalable, contribute to open-source projects, and share what I learn along the way. Basically: I break things so other people don't have to.
                     </p>
                 </div>
             </div>
@@ -1041,7 +1027,10 @@
                 </div>
                 <div class="contact-info fade-in">
                     <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of an ambitious vision. Feel free to reach out.</p>
-                    <a href="mailto:antonymichealpeoshane@gmail.com" class="btn">Say Hello</a>
+                    <div style="margin-top: 2rem;">
+                        <p style="font-size: 1.1rem; margin-bottom: 1rem; color: var(--text-primary);"><strong>Email:</strong> antonyshane@rapturetwelve.com</p>
+                        <p style="font-size: 1.1rem; color: var(--text-primary);"><strong>Mobile:</strong> +91 9790791723</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -1049,12 +1038,6 @@
 
     <footer class="footer">
         <div class="container">
-            <div class="footer-links">
-                <a href="mailto:antonymichealpeoshane@gmail.com">Email</a>
-                <a href="#">LinkedIn</a>
-                <a href="#">GitHub</a>
-                <a href="#">Twitter</a>
-            </div>
             <p>&copy; 2025 Antony Shane. All rights reserved.</p>
         </div>
     </footer>
