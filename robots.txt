@@ -1,0 +1,56 @@
+# robots.txt for antonyshane.com
+
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://antonyshane.com/sitemap.xml
+
+# Block access to sensitive files and directories (if any)
+# Disallow: /private/
+# Disallow: /admin/
+
+# Allow all major search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+# Block bad bots and scrapers
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: SEOkicks
+Disallow: /
+
+User-agent: Rogerbot
+Disallow: /
+
+# Crawl delay for other bots (optional)
+User-agent: *
+Crawl-delay: 10
