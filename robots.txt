@@ -1,16 +1,13 @@
 # robots.txt for antonyshane.com
+# Optimized for maximum search engine visibility
 
 User-agent: *
 Allow: /
 
-# Sitemaps
+# Sitemap for better indexing
 Sitemap: https://antonyshane.com/sitemap.xml
 
-# Block access to sensitive files and directories (if any)
-# Disallow: /private/
-# Disallow: /admin/
-
-# Allow all major search engines
+# Explicitly allow all major search engines
 User-agent: Googlebot
 Allow: /
 
@@ -32,25 +29,26 @@ Allow: /
 User-agent: YandexBot
 Allow: /
 
-# Block bad bots and scrapers
+User-agent: facebot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+# Allow SEO and analytics bots for visibility
 User-agent: AhrefsBot
-Disallow: /
+Allow: /
 
 User-agent: SemrushBot
-Disallow: /
+Allow: /
 
 User-agent: MJ12bot
-Disallow: /
+Allow: /
 
 User-agent: DotBot
-Disallow: /
+Allow: /
 
-User-agent: SEOkicks
-Disallow: /
-
-User-agent: Rogerbot
-Disallow: /
-
-# Crawl delay for other bots (optional)
-User-agent: *
-Crawl-delay: 10
+# No crawl delay - allow fast indexing
